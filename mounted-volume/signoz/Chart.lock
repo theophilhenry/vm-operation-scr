@@ -1,0 +1,21 @@
+dependencies:
+- name: clickhouse
+  repository: https://signoz.github.io/charts
+  version: 23.8.8
+- name: k8s-infra
+  repository: https://signoz.github.io/charts
+  version: 0.7.0
+- name: cert-manager
+  repository: https://charts.jetstack.io
+  version: v1.9.1
+- name: ingress-nginx
+  repository: https://kubernetes.github.io/ingress-nginx
+  version: 4.3.0
+- name: minio
+  repository: https://charts.min.io
+  version: 4.0.9
+- name: keycloak
+  repository: https://charts.bitnami.com/bitnami
+  version: 10.1.5
+digest: sha256:7e783326354b1036fdf23d8a1f7b0a2aaaaf913e26a61e166b223a24e50398fd
+generated: "2023-02-25T02:08:05.683026+05:30"

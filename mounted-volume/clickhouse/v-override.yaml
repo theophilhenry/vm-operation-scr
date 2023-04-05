@@ -1,0 +1,25 @@
+defaultProfiles:
+  default/allow_experimental_window_functions: "1"
+  default/allow_nondeterministic_mutations: "1"
+  default/max_partitions_per_insert_block: 500
+
+global:
+  storageClass: "rook-ceph-block"
+
+files: 
+  users.d/00-privy-override.xml: |
+    <yandex>
+        <users>
+            <clickhouse_operator>
+                <networks>
+                    <ip>127.0.0.1</ip>
+                    <ip>0.0.0.0/0</ip>
+                </networks>
+            </clickhouse_operator>
+            <admin>
+                <access_management>1</access_management>
+            </admin>
+        </users>
+    </yandex>
+
+

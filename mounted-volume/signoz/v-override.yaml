@@ -1,0 +1,40 @@
+global:
+  storageClass: "rook-ceph-block"
+
+clickhouse:
+  enabled: false
+  # allowedNetworkIps:
+  #   - "10.0.0.0/8"
+  #   - "100.64.0.0/10"
+  #   - "172.16.0.0/12"
+  #   - "192.0.0.0/24"
+  #   - "198.18.0.0/15"
+  #   - "192.168.0.0/16"
+  #   - "0.0.0.0/0"
+
+externalClickhouse:
+  host: clickhouse.clickhouse.svc.cluster.local
+  cluster: cluster
+  database: signoz_metrics
+  traceDatabase: signoz_traces
+  user: "admin"
+  password: "27ff0399-0d3a-4bd8-919d-17c2181e6fb9"
+
+frontend:
+  ingress:
+    enabled: true
+    className: "nginx"
+
+otelCollector:
+  ingress:
+    enabled: true
+    className: "nginx"
+  config:
+    processors:
+      batch:
+        send_batch_size: 50000
+
+otelCollectorMetrics:
+  ingress:
+    enabled: true
+    className: "nginx"
