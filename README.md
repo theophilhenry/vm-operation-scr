@@ -1,4 +1,4 @@
-![Image](./assets/cover.png)
+![SigNoz, ClickHouse, and RookCeph 3D Cover](./assets/cover.png)
 
 # Vagrantfile to Automate Kubernetes Setup
 > The full explanation of SCR on K8s can be seen on this article : [Rook-Ceph K8s Hands-On: Study Case SigNoz + ClickHouse](https://medium.com/@theophil730730/rook-ceph-k8s-hands-on-study-case-signoz-clickhouse-fb9ad1417815)
